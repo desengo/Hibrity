@@ -7,19 +7,21 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#050c08] text-white relative overflow-x-hidden">
-
+<body class="bg-[#050c08] text-white">
 <div class="min-h-screen">
 
+<!-- HERO -->
 <section class="max-w-7xl mx-auto px-6 py-20 md:py-28">
 
 <div class="max-w-4xl">
 
+<!-- TÍTULO PRINCIPAL -->
 <div class="flex items-center gap-4">
 <img
 src="https://desengo.github.io/Hibrity/logo-hibrity.png"
 alt="Hibrity"
 class="w-16 h-16 object-contain"
+onerror="this.style.display='none'"
 >
 
 <h1 class="text-5xl md:text-7xl font-black tracking-tight">
@@ -33,54 +35,59 @@ O melhor de dois mundos.
 
 </div>
 
-<!-- CARDS -->
-<div id="sistemas" class="mt-14 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+<!-- CARDS DOS SISTEMAS -->
+<div id="sistemas" class="mt-16 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
 
-<!-- RouterGo -->
-<a href="https://routergo.netlify.app"
-class="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 hover:border-[#18ff6d]/50 hover:-translate-y-1 transition shadow-lg">
+<!-- RouterGo + Entregago -->
+<a
+href="https://routergo.netlify.app"
+class="group rounded-3xl border border-white/10 bg-white/5 p-6 hover:border-[#18ff6d]/50 hover:-translate-y-1 transition block shadow-xl">
 
-<div class="w-12 h-12 rounded-xl bg-[#18ff6d]/15 flex items-center justify-center text-2xl">
+<div class="w-12 h-12 rounded-2xl bg-[#18ff6d]/15 flex items-center justify-center text-2xl">
 🚚
 </div>
 
-<h3 class="text-xl font-black mt-4">
+<h3 class="text-2xl font-black mt-4">
 RouterGo + Entregago
 </h3>
 
-<p class="text-zinc-400 mt-3 text-sm leading-6">
-Sistema de gestão operacional integrado a aplicativos e ferramentas digitais que auxiliam empresas na organização de processos.
+<p class="text-zinc-400 mt-3 leading-7">
+Sistema de gestão operacional integrado a aplicativos e ferramentas
+digitais que auxiliam empresas na organização de processos,
+execução de tarefas e controle de operações.
 </p>
 
 <div class="mt-6 flex items-center justify-between">
-<span class="text-[#18ff6d] font-bold text-sm">Acessar</span>
+<span class="text-[#18ff6d] font-bold">Acessar</span>
 <span class="text-zinc-500 group-hover:text-[#18ff6d] transition">→</span>
 </div>
 
 </a>
 
-<!-- Ede -->
-<div class="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 shadow-lg">
+<!-- ede -->
+<div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-xl">
 
-<div class="w-12 h-12 rounded-xl bg-[#18ff6d]/15 flex items-center justify-center text-2xl">
+<div class="w-12 h-12 rounded-2xl bg-[#18ff6d]/15 flex items-center justify-center text-2xl">
 🧾
 </div>
 
-<h3 class="text-xl font-black mt-4">
+<h3 class="text-2xl font-black mt-4">
 Ede
 </h3>
 
-<p class="text-zinc-400 mt-3 text-sm leading-6">
-Plataforma digital em desenvolvimento voltada à conexão entre usuários e operações digitais.
+<p class="text-zinc-400 mt-3 leading-7">
+Plataforma digital em desenvolvimento voltada à conexão entre usuários,
+estabelecimentos e operações digitais, ampliando o ecossistema de
+serviços da Hibrity.
 </p>
 
 <div class="mt-6 flex items-center justify-between">
 
-<div class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-zinc-400 text-xs">
+<div class="inline-flex px-4 py-2 rounded-full bg-white/5 border border-white/10 text-zinc-400 text-sm">
 Em desenvolvimento
 </div>
 
-<span class="text-zinc-500 text-xs">
+<span class="text-zinc-500 text-sm">
 Novo produto
 </span>
 
@@ -89,27 +96,27 @@ Novo produto
 </div>
 
 <!-- Guardio -->
-<div class="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 shadow-lg">
+<div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-xl">
 
-<div class="w-12 h-12 rounded-xl bg-[#18ff6d]/15 flex items-center justify-center text-2xl">
+<div class="w-12 h-12 rounded-2xl bg-[#18ff6d]/15 flex items-center justify-center text-2xl">
 🔐
 </div>
 
-<h3 class="text-xl font-black mt-4">
+<h3 class="text-2xl font-black mt-4">
 Guardio
 </h3>
 
-<p class="text-zinc-400 mt-3 text-sm leading-6">
+<p class="text-zinc-400 mt-3 leading-7">
 Plataforma em desenvolvimento para gerenciamento de acessos de pessoas.
 </p>
 
 <div class="mt-6 flex items-center justify-between">
 
-<div class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-zinc-400 text-xs">
+<div class="inline-flex px-4 py-2 rounded-full bg-white/5 border border-white/10 text-zinc-400 text-sm">
 Em desenvolvimento
 </div>
 
-<span class="text-zinc-500 text-xs">
+<span class="text-zinc-500 text-sm">
 Segurança
 </span>
 
@@ -118,27 +125,29 @@ Segurança
 </div>
 
 <!-- Gersco -->
-<div class="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 shadow-lg">
+<div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-xl">
 
-<div class="w-12 h-12 rounded-xl bg-[#18ff6d]/15 flex items-center justify-center text-2xl">
+<div class="w-12 h-12 rounded-2xl bg-[#18ff6d]/15 flex items-center justify-center text-2xl">
 🎓
 </div>
 
-<h3 class="text-xl font-black mt-4">
+<h3 class="text-2xl font-black mt-4">
 Gersco
 </h3>
 
-<p class="text-zinc-400 mt-3 text-sm leading-6">
-Plataforma voltada à organização de ambientes educacionais e gestão institucional.
+<p class="text-zinc-400 mt-3 leading-7">
+Plataforma em desenvolvimento voltada à organização de ambientes
+educacionais, gestão de instituições, comunicação entre usuários
+e digitalização de processos acadêmicos.
 </p>
 
 <div class="mt-6 flex items-center justify-between">
 
-<div class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-zinc-400 text-xs">
+<div class="inline-flex px-4 py-2 rounded-full bg-white/5 border border-white/10 text-zinc-400 text-sm">
 Em desenvolvimento
 </div>
 
-<span class="text-zinc-500 text-xs">
+<span class="text-zinc-500 text-sm">
 Educação
 </span>
 
@@ -147,28 +156,28 @@ Educação
 </div>
 
 <!-- Finager -->
-<div class="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 shadow-lg">
+<div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-xl">
 
-<div class="w-12 h-12 rounded-xl bg-[#18ff6d]/15 flex items-center justify-center text-2xl">
+<div class="w-12 h-12 rounded-2xl bg-[#18ff6d]/15 flex items-center justify-center text-2xl">
 📍
 </div>
 
-<h3 class="text-xl font-black mt-4">
+<h3 class="text-2xl font-black mt-4">
 Finager
 </h3>
 
-<p class="text-zinc-400 mt-3 text-sm leading-6">
+<p class="text-zinc-400 mt-3 leading-7">
 Gerenciamento financeiro para empresas de pequeno e médio porte.
 </p>
 
 <div class="mt-6 flex items-center justify-between">
 
-<div class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-zinc-400 text-xs">
+<div class="inline-flex px-4 py-2 rounded-full bg-white/5 border border-white/10 text-zinc-400 text-sm">
 Em desenvolvimento
 </div>
 
-<span class="text-zinc-500 text-xs">
-Finanças
+<span class="text-zinc-500 text-sm">
+Família
 </span>
 
 </div>
@@ -176,27 +185,29 @@ Finanças
 </div>
 
 <!-- RH Digital -->
-<div class="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 shadow-lg">
+<div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-xl">
 
-<div class="w-12 h-12 rounded-xl bg-[#18ff6d]/15 flex items-center justify-center text-2xl">
+<div class="w-12 h-12 rounded-2xl bg-[#18ff6d]/15 flex items-center justify-center text-2xl">
 👥
 </div>
 
-<h3 class="text-xl font-black mt-4">
+<h3 class="text-2xl font-black mt-4">
 RH Digital
 </h3>
 
-<p class="text-zinc-400 mt-3 text-sm leading-6">
-Plataforma voltada à gestão de pessoas e digitalização de processos de RH.
+<p class="text-zinc-400 mt-3 leading-7">
+Plataforma em desenvolvimento voltada à gestão de pessoas,
+organização de equipes, controle de colaboradores e
+digitalização de processos de recursos humanos.
 </p>
 
 <div class="mt-6 flex items-center justify-between">
 
-<div class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-zinc-400 text-xs">
+<div class="inline-flex px-4 py-2 rounded-full bg-white/5 border border-white/10 text-zinc-400 text-sm">
 Em desenvolvimento
 </div>
 
-<span class="text-zinc-500 text-xs">
+<span class="text-zinc-500 text-sm">
 Gestão de pessoas
 </span>
 
@@ -204,9 +215,125 @@ Gestão de pessoas
 
 </div>
 
+<!-- Stockge -->
+<div class="rounded-3xl border border-dashed border-white/15 bg-white/5 p-6 shadow-xl">
+
+<div class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-2xl">
+✨
+</div>
+
+<h3 class="text-2xl font-black mt-4">
+Stockge
+</h3>
+
+<p class="text-zinc-400 mt-3 leading-7">
+A Hibrity será a base tecnológica para novos sistemas,
+aplicativos e ferramentas que expandirão o ecossistema
+digital da plataforma.
+</p>
+
+<div class="mt-6 inline-flex px-4 py-2 rounded-full bg-white/5 border border-white/10 text-zinc-400 text-sm">
+Em breve
+</div>
+
+</div>
+
 </div>
 
 </section>
+
+<!-- MÉTRICAS -->
+<section class="max-w-7xl mx-auto px-6 pb-20">
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="rounded-3xl border border-white/10 bg-white/5 p-8 text-center shadow-xl">
+<div class="text-4xl font-black text-[#18ff6d]">+150 mil</div>
+<div class="mt-3 text-zinc-300 text-lg">usuários</div>
+</div>
+
+<div class="rounded-3xl border border-white/10 bg-white/5 p-8 text-center shadow-xl">
+<div class="text-4xl font-black text-[#18ff6d]">+200 mil</div>
+<div class="mt-3 text-zinc-300 text-lg">acessos</div>
+</div>
+
+<div class="rounded-3xl border border-white/10 bg-white/5 p-8 text-center shadow-xl">
+<div class="text-4xl font-black text-[#18ff6d]">3+</div>
+<div class="mt-3 text-zinc-300 text-lg">plataformas em evolução</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="max-w-7xl mx-auto px-6 pb-20">
+
+<div class="mb-12">
+<h2 class="text-4xl md:text-5xl font-black">Quem utiliza aprova</h2>
+
+<p class="text-zinc-400 mt-4 text-lg">
+Soluções pensadas para operação, produtividade e crescimento digital.
+</p>
+</div>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl">
+
+<p class="text-zinc-300 leading-7">
+“A Hibrity trouxe uma visão mais organizada dos nossos sistemas e facilitou muito o acesso às ferramentas do dia a dia.”
+</p>
+
+<div class="mt-6">
+<div class="font-bold">Marina Costa</div>
+<div class="text-sm text-zinc-500">Gestora operacional</div>
+</div>
+
+</div>
+
+<div class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl">
+
+<p class="text-zinc-300 leading-7">
+“O ecossistema ficou muito mais claro. Conseguimos centralizar processos e evoluir a operação com muito mais segurança.”
+</p>
+
+<div class="mt-6">
+<div class="font-bold">Rafael Mendes</div>
+<div class="text-sm text-zinc-500">Diretor de operações</div>
+</div>
+
+</div>
+
+<div class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl">
+
+<p class="text-zinc-300 leading-7">
+“A proposta da Hibrity mostra maturidade de plataforma. É o tipo de estrutura que permite crescer sem perder organização.”
+</p>
+
+<div class="mt-6">
+<div class="font-bold">Juliana Freitas</div>
+<div class="text-sm text-zinc-500">Consultora de tecnologia</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-white/10">
+
+<div class="max-w-7xl mx-auto px-6 py-8 text-sm text-zinc-500 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+
+<div>Hibrity • Ecossistema de tecnologia</div>
+
+<div>RouterGo • Entregago • Pedium • Access Control • Scool Org • Onver App • RH Digital</div>
+
+</div>
+
+</footer>
 
 </div>
 </body>
